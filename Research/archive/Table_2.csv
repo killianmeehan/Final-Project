@@ -1,0 +1,17 @@
+Sample,Matrix,Earthworms?,Plant_biomass_g
+Lterr 1.1,Soil,Yes,2.51
+Lterr 1.2,Soil,Yes,3.46
+Lterr 1.3,Soil,Yes,5.57
+Lterr 1.4,Soil,Yes,1.68
+Lterr 1.5,Soil,Yes,3.6
+Lterr 2.1,Soil,No,4.12
+Lterr 2.2,Soil,No,4.74
+Lterr 2.3,Soil,No,5.68
+Lterr 2.4,Soil,No,6.11
+Lterr 2.5,Soil,No,3.7
+Plants A,hydroponic,No,2.54
+Plants B,hydroponic,No,1.34
+Plants C,hydroponic,No,1.78
+PW A,hydroponic,Yes,1.65
+PW B,hydroponic,Yes,2.24
+PW C,hydroponic,Yes,0.98

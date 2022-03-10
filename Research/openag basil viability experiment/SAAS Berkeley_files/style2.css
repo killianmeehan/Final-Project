@@ -1,0 +1,102 @@
+body {
+  font-family: lato !important;
+  font-size: 16px;
+  --saas-blue: skyblue;
+  --saas-pink: pink;
+  --saas-dark-blue: #5fb0d8;
+  --saas-dark-pink: #ebb0d4;
+  --saas-light-grey: #fafafa;
+  --saas-medium-grey: #d0d0d0;
+  --saas-dark-grey: #494949;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 77px;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 50px;
+  padding-bottom: 5px;
+}
+
+h1,
+h2 {
+  font-family: open sans;
+}
+
+a:hover {
+  transition: 0.2s;
+}
+
+.gradient {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(45deg, skyblue, pink);
+}
+
+.gradient-underline {
+  background: linear-gradient(45deg, skyblue, pink);
+  height: 5px;
+  border-radius: 5px;
+}
+
+.saas-img {
+  filter: drop-shadow(10px 10px 4px var(--saas-medium-grey));
+}
+
+/* buttons that perform an action and don't take you to a new page, e.g. submit */
+.button-primary {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--saas-blue);
+  font-size: 16px;
+  padding: 5px 10px;
+  color: white;
+}
+
+/* TODO: change this to be consistent w the other buttons? */
+
+.button-primary:hover {
+  background-color: var(--saas-dark-blue);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* buttons that take you to a new page */
+.button-cta {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, skyblue, pink);
+  border: none;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.25s;
+}
+
+.button-cta:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.box {
+  position: relative;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px var(--saas-medium-grey);
+  padding-top: 40px !important;
+  padding: 30px;
+  height: auto;
+  margin-bottom: 100px;
+  color: black;
+}

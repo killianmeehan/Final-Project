@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../fonts/pm/Proxima-Nova.ttf") format('truetype');
+    src: url("../fonts/pm/ProximaNova-Black.woff") format('woff');
+    src: url("../fonts/pm/pmsemibold.eot");
+
+}
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: url("../fonts/AvenirNext-Reg.otf");
+}
+
+
+@font-face {
+    font-family: 'Tiempos';
+    src: url("../fonts/iemposText-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Avenir Next Light";
+    src: url("../fonts/avenir-light.ttf");
+}
+
+/*
+@font-face {
+    font-family: 'Britannic Bold';
+    src: url("../fonts/Britannic.ttf");
+}
+*/
+@font-face {
+    font-family: 'Tiempos';
+    src: url("../fonts/TiemposText-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("../fonts/OpenSans-Bold.ttf");
+}

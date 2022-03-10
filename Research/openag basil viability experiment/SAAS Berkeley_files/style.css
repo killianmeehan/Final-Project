@@ -1,0 +1,634 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
+      format("embedded-opentype"),
+    url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+    url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =======================================================
+*
+* 	Template Style
+*	Edit this section
+*
+* ======================================================= */
+.fade {
+  transition: 0.5s linear all;
+}
+.fade.ng-enter-stagger,
+.fade.ng-leave-stagger {
+  transiton-delay: 0.1s;
+  transition-duration: 0s;
+}
+
+.fade.ng-enter {
+  opacity: 0;
+}
+.fade.ng-enter.ng-enter-active {
+  opacity: 1;
+}
+html {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: lato;
+  font-weight: normal;
+  font-size: 20px;
+  color: black;
+  height: 100%;
+  position: relative;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+strong {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-family: "Avenir Next" !important;
+    overflow-x: hidden !important;
+  }
+}
+
+/* TODO: keep heading bolding consistent */
+
+p {
+  margin-bottom: 30px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure {
+  color: #000;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.apply-button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.apply-button {
+  font-size: 20px;
+  color: white;
+  margin: 30px 0 0 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  /*background-color:rgb(76,169,216, .75);*/
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+}
+
+.apply-button:hover,
+.apply-button:focus {
+  text-decoration: none;
+  color: white;
+}
+
+.apply-header {
+  background: rgba(255, 255, 255, 0.7);
+  color: rgb(0, 0, 0) !important;
+  border-radius: 3px;
+  margin-left: 10px;
+  margin: 38px -0px 0 0;
+  padding: 5px 10px 5px 10px !important;
+}
+
+.apply-header:hover {
+  background-color: rgb(39, 255, 206);
+}
+
+::-webkit-selection {
+  color: #fff;
+  background: #268bd2;
+}
+
+::-moz-selection {
+  color: #fff;
+  background: #268bd2;
+}
+
+::selection {
+  color: #fff;
+  background: #268bd2;
+}
+
+.fh5co-social {
+  padding: 0;
+  margin: 0;
+}
+.fh5co-social li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.fh5co-social a {
+  font-size: 16px;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+}
+.fh5co-social a:hover {
+  color: #268bd2;
+}
+.fh5co-social li a:hover,
+.fh5co-social li a:active,
+.fh5co-social li a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .col-xxs-12 {
+    float: none;
+    width: 100%;
+  }
+}
+
+.row-bottom-padded-lg {
+  padding-bottom: 7em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-lg {
+    padding-bottom: 1em;
+  }
+}
+
+.row-bottom-padded-md {
+  padding-bottom: 4em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-md {
+    padding-bottom: 1em;
+  }
+}
+
+.row-bottom-padded-sm {
+  padding-bottom: 1em;
+}
+@media screen and (max-width: 768px) {
+  .row-bottom-padded-sm {
+    padding-bottom: 1em;
+  }
+}
+
+#fh5co-header {
+  background-color: white !important;
+  /*position: fixed;*/
+  overflow: visible;
+  z-index: 1000;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-header {
+    margin: 0px 0 0 0;
+  }
+}
+#fh5co-header .header-inner {
+  height: 80px;
+  padding-left: 0px;
+  padding-right: 20px;
+  width: 100%;
+  overflow: visible;
+}
+#fh5co-header h1,
+#fh5co-header nav {
+  margin: 0px 0 0 0;
+}
+#fh5co-header nav {
+  padding: 0;
+}
+
+#fh5co-header .dropdown-item:hover {
+  color: #000000;
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+/* NavBar Tabs */
+#fh5co-header nav ul {
+  padding: 0;
+  margin: 38px -0px 0 0;
+  line-height: 0;
+}
+#fh5co-header nav ul li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+#fh5co-header nav ul li a {
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* Hovering over committee names */
+#fh5co-header nav ul li .dropdown-menu a:hover {
+  transform: scale(1);
+  margin-top: 0px;
+  color: black;
+  cursor: pointer;
+}
+
+/* Committee name styling */
+#fh5co-header nav ul li .dropdown-menu a {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+/* Hovering over navbar tabs */
+#fh5co-header nav ul li a:hover {
+  text-decoration: none;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Is this the UCPD crime stuff */
+#map {
+  height: 500px;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #map {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #map {
+    height: 200px;
+  }
+}
+
+#footer {
+  padding: 1em 0;
+  width: 100%;
+  background-color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  color: black;
+}
+#fh5co-page {
+  position: relative;
+  z-index: 2;
+}
+
+#fh5co-offcanvas,
+.fh5co-nav-toggle,
+#fh5co-page {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#fh5co-offcanvas,
+.fh5co-nav-toggle,
+#fh5co-page {
+  position: relative;
+}
+
+#fh5co-page {
+  z-index: 2;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.offcanvas-visible #fh5co-page {
+  -moz-transform: translateX(-275px);
+  -webkit-transform: translateX(-275px);
+  -ms-transform: translateX(-275px);
+  -o-transform: translateX(-275px);
+  transform: translateX(-275px);
+}
+
+/* Offcanvas = navigation sidebar on mobile */
+#fh5co-offcanvas {
+  display: block;
+  height: 100%;
+  right: -275px;
+  overflow-y: auto;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 275px;
+  background: white;
+  padding: 30px;
+}
+
+/* Display sidebar and hide top navbar on small screen sizes */
+@media screen and (max-width: 768px) {
+  #fh5co-offcanvas {
+    display: block;
+  }
+  #fh5co-header .navbar-nav {
+    display: none;
+  }
+}
+
+#fh5co-offcanvas ul {
+  padding: 0;
+  margin: 0;
+}
+
+#fh5co-offcanvas ul li {
+  padding: 0;
+  margin: 0 0 10px 0;
+  list-style: none;
+  line-height: 28px;
+}
+#fh5co-offcanvas ul li a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none !important;
+}
+
+/* Hovering for sidebar tabs */
+#fh5co-offcanvas ul li a:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#fh5co-offcanvas ul li .dropdown-item {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+}
+
+#fh5co-offcanvas ul li .dropdown-item:hover {
+  transform: scale(1);
+  color: black;
+  margin-top: 0px;
+  cursor: pointer;
+  background-color: #ededed;
+}
+/* Is nav-toggle the 3 bars thing you click on to view the sidebar? */
+.fh5co-nav-toggle {
+  cursor: pointer;
+  text-decoration: none;
+}
+.fh5co-nav-toggle.active i::before,
+.fh5co-nav-toggle.active i::after {
+  background: black;
+}
+.fh5co-nav-toggle.dark.active i::before,
+.fh5co-nav-toggle.dark.active i::after {
+  background: black;
+}
+.fh5co-nav-toggle:hover,
+.fh5co-nav-toggle:focus,
+.fh5co-nav-toggle:active {
+  outline: none;
+  border-bottom: none !important;
+}
+.fh5co-nav-toggle i {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 20px;
+  height: 2px;
+  color: black;
+  font: bold 14px/0.4 Helvetica;
+  text-transform: uppercase;
+  text-indent: -55px;
+  background: black;
+  transition: all 0.2s ease-out;
+}
+.fh5co-nav-toggle i::before,
+.fh5co-nav-toggle i::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: black;
+  position: absolute;
+  left: 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.fh5co-nav-toggle.dark i {
+  position: relative;
+  color: white;
+  background: #000;
+  transition: all 0.2s ease-out;
+}
+.fh5co-nav-toggle.dark i::before,
+.fh5co-nav-toggle.dark i::after {
+  background: #000;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.fh5co-nav-toggle i::before {
+  top: -7px;
+}
+
+.fh5co-nav-toggle i::after {
+  bottom: -7px;
+}
+
+.fh5co-nav-toggle:hover i::before {
+  top: -10px;
+}
+
+.fh5co-nav-toggle:hover i::after {
+  bottom: -10px;
+}
+
+.fh5co-nav-toggle.active i {
+  background: transparent;
+}
+
+.fh5co-nav-toggle.active i::before {
+  top: 0;
+  -webkit-transform: rotateZ(45deg);
+  -moz-transform: rotateZ(45deg);
+  -ms-transform: rotateZ(45deg);
+  -o-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.fh5co-nav-toggle.active i::after {
+  bottom: 0;
+  -webkit-transform: rotateZ(-45deg);
+  -moz-transform: rotateZ(-45deg);
+  -ms-transform: rotateZ(-45deg);
+  -o-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+}
+
+.fh5co-nav-toggle {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  z-index: 9999;
+  display: block;
+  margin: 0 auto;
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-nav-toggle {
+    display: block;
+    top: 20px;
+  }
+}
+.fh5co-light-grey-section {
+  background: rgba(0, 0, 0, 0.03) !important;
+}
+
+.js .animate-box {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#form {
+  opacity: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#ucstatement {
+}
+
+@keyframes formFade {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes formFade {
+  /* Firefox */
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes formFade {
+  /* Safari and Chrome */
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes formFade {
+  /* Opera */
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+img,
+figure {
+  max-width: 100%;
+}
+
+.gradient-divide {
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(45deg, skyblue, pink);
+  z-index: 100;
+}
+
+/** FOOTER **/
+
+.logo-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (max-width: 500px) {
+  .logo-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .sub-cont {
+    width: 80%;
+  }
+
+  #top {
+    margin-left: -10%;
+  }
+
+  #bot {
+    margin-left: -15%;
+  }
+}
+
+.row_socials {
+  display: flex;
+}
+.col_socials {
+  flex: 5%;
+  padding: 20px;
+}
